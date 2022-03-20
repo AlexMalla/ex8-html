@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Lezione HTML</title>
+    <style>
+      label {
+        display: block;
+      }
+
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+     margin: 0;
+}
+    </style>
+  </head>
+
+  <body>
+    <form action="#">
+      <div>
+        <label for="form-email">Email</label>
+        <input type="email" name="email" required />
+        <label for="form-pass">Password</label>
+        <input type="password" name="pass" required />
+      </div>
+      <div>
+        <label for="form-name">Nome e cognome</label>
+        <input type="text" name="name" required />
+        <label for="form-dob">Data di nascita</label>
+        <input type="date" name="dob" required />
+        <label for="form-tel">Telefono</label>
+        <input type="number" inputmode="numeric"  name="tel" maxlength="10" required />
+      </div>
+      <div>
+        <label for="form-plan">Piano di abbonamento</label>
+        <select name="plan">
+          <option value="0">Free</option>
+          <optgroup label="Mensili">
+            <option value="199">1.99€/mese</option>
+            <option value="599">5.99€/mese</option>
+            <option value="1199">11.99€/mese</option>
+          </optgroup>
+        </select>
+        <label for="form-pro">Piano PRO</label>
+        <input  name="pro" type="checkbox" required />
+      </div>
+      <div>
+        <label for="form-cc">Numero Carta</label>
+        <input name="cc" type="number" inputmode="numeric" required maxlength="19" placeholder="xxxx xxxx xxxx xxxx" autocomplete="cc-number" />
+        <label for="form-cvc">CVC</label>
+        <input name="cvc" type="number" required maxlength="3" />
+        <label for="form-exp">Scadenza</label>
+        <input name="exp" type="date" required />
+        <label for="form-address">Indirizzo di fatturazione</label>
+        <input type="text" id="form-address" name="address" required />
+      </div>
+
+      <button type="submit">Registrati</button>
+    </form>
+  </body>
+</html>
